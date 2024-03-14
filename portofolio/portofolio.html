@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9f3246d2c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- navbar section start -->
+    <div class="navbar-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-start text">
+            <i class="fa-solid fa-phone"></i> +628598899120
+          </div>
+          <div class="col-md-5 text-start text">
+            <i class="fa-brands fa-instagram"></i> My Instagram
+          </div>
+          <div class="col text-end text">
+            <i class="fa-brands fa-instagram"></i> Follow Us
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <section>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/portofolio/portofolio.html"
+                  >Portofolio</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/about/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link todo_list"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Todo List
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- navbar section end -->
+
+    <!-- todo list -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <input
+                type="text"
+                id="input-box"
+                placeholder="masukkan pesan"
+                class="form-control"
+              />
+              <button type="button" class="btn btn-info" onclick="addTask()">
+                Tambah
+              </button>
+            </div>
+            <ul id="list-container">
+              <!-- <li class="checked">Task 1</li>
+              <li >Task 2</li>
+              <li >Task 3</li> -->
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end todo list -->
+
+    <!-- section portofolio start -->
+    <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title text-center" data-aos="fade-left">
+          Portofolio Kami
+        </h1>
+        <div class="kotak2">
+          <div class="kotak">
+            <div class="text-center jenis-portf">
+              <a href="" class="all" id="all">All</a>
+              <a href="" class="sistem-informasi mx-4" id="sistem_informasi"
+                >Sistem Informasi</a
+              >
+              <a href="" class="profil" id="profil">Profil</a>
+            </div>
+          </div>
+        </div>
+        <div class="work-list">
+          <div
+            class="work"
+            id="sistem_informasi"
+            data-aos-easing="ease-in-out"
+            data-aos="fade-up"
+          >
+            <img src="/assets/img/portofolio/dwo_web.jpg" alt="" />
+            <div class="layer">
+              <h2>Data Warehouse</h2>
+              <p>Sebuah Website yang menerapkan OLAP dan ETL.</p>
+              <br />- MySQL <br />- React Native <br />- Boostrap <br />-
+              Highchart <br />- JavaScript <br />- OLAP <br />- PHP
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="work" id="sistem_informasi">
+            <img src="/assets/img/portofolio/absensi.jpg" alt="" />
+            <div class="layer">
+              <h2>Web Absensi</h2>
+              <p>
+                Membuat Web Absensi untuk memperbanyak pengalaman dan menambah
+                portofolio.
+              </p>
+              <br />- Boostrap <br />- JavaScript <br />- MySql <br />- PHP
+
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="work" id="profil" data-aos="fade-up">
+            <img src="/assets/img/portofolio/angkringan.jpg" alt="" />
+            <div class="layer">
+              <h2>Web Angkringan</h2>
+              <p>Membuat Website Angkringan untuk UMKM.</p>
+              <br />- Laravel <br />- Payment Midtrans <br />- Boostrap <br />-
+              MySql <br />- JavaScript
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="work" id="profil" data-aos="fade-up">
+            <img src="/assets/img/portofolio/antrian_klinik.jpg" alt="" />
+            <div class="layer">
+              <h2>Web Antrian</h2>
+              <p>Membuat Website Antrian Untuk Keperluan Tugas Akhir Client.</p>
+              <br />- CodeIgniter 3 <br />- MySql <br />- Boostrap <br />-
+              JavaScript
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="work" id="profil" data-aos="fade-up">
+            <img src="/assets/img/portofolio/club_motor.jpg" alt="" />
+            <div class="layer">
+              <h2>Company Profile</h2>
+              <p>
+                Membuat Website Company Profile untuk keperluan Assesment
+                Sertifikasi BNSP.
+              </p>
+              <br />- Laravel
+              <!-- <br>- Payment Midtrans -->
+              <br />- Boostrap <br />- MySql <br />- JavaScript
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="work" id="sistem_informasi" data-aos="fade-up">
+            <img src="/assets/img/portofolio/naive_baiyes.jpg" alt="" />
+            <div class="layer">
+              <h2>Sistem Pendukung Keputusan</h2>
+              <p>
+                Membuat Website SPK (Sistem Pendukung Keputusan) untuk keperluan
+                Tugas Akhir Client.
+              </p>
+              <br />- CodeIgniter 3 <br />- MySql <br />- Boostrap <br />-
+              JavaScript
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="work" id="sistem_informasi" data-aos="fade-up">
+            <img src="/assets/img/portofolio/pelni.jpg" alt="" />
+            <div class="layer">
+              <h2>Web Mapping Gudang</h2>
+              <p>
+                Membuat Website Penataan Barang di Gudang, untuk keperluan
+                perusahaan.
+              </p>
+              <br />- Laravel
+              <!-- <br>- Payment Midtrans -->
+              <br />- Boostrap <br />- MySql <br />- JavaScript
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="work" id="sistem_informasi" data-aos="fade-up">
+            <img src="/assets/img/portofolio/pos_gudang.jpg" alt="" />
+            <div class="layer">
+              <h2>Web POS</h2>
+              <p>Membuat Point Of Sales untuk keperluan Tugas Akhir Client.</p>
+              <br />- Boostrap <br />- PHP <br />- MySql <br />- JavaScript
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="work" id="profil" data-aos="fade-up">
+            <img src="/assets/img/portofolio/puntadewa.jpg" alt="" />
+            <div class="layer">
+              <h2>Company Profile</h2>
+              <p>Membuat COmpany Profile untuk PT. Puntadewa Group.</p>
+              <br />- Tailwint <br />- Boostrap <br />- Laravel <br />- MySql
+              <br />- JavaScript
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="work" id="sistem_informasi" data-aos="fade-up">
+            <img src="/assets/img/portofolio/scm_pisang.jpg" alt="" />
+            <div class="layer">
+              <h2>ERP</h2>
+              <p>
+                Membuat Website POS (Point Of Sales) untuk keperluan tugas akhir
+                client.
+              </p>
+              <br />- PHP <br />- MySql <br />- Native <br />- Boostrap <br />-
+              JavaScript
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+          <div class="work" id="sistem_informasi" data-aos="fade-up">
+            <img src="/assets/img/portofolio/sistem_gajian_pondok.jpg" alt="" />
+            <div class="layer">
+              <h2>Sistem Informasi Penggajian</h2>
+              <p>
+                Membuat sistem informasi penggajian untuk keperluan tugas akhir
+                client.
+              </p>
+              <br />- Codeigniter 3 <br />- Mysql <br />- Boostrap <br />-
+              JavaScript
+              <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn-portf">See more</a>
+      </div>
+    </div>
+    <!-- section home end -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="text-center" data-aos="fade-left">Testimoni</h2>
+          <p class="text-center" data-aos="fade-right">
+            Pendapat pelanggan tentang layanan kami.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="testimonial-item" data-aos="fade-right">
+              <img
+                src="/assets/img/testimonials/testimonials-1.jpg"
+                class="testimonial-img"
+                alt=""
+              />
+              <h3>Wibowo Mukti</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quisquam, explicabo ipsa, excepturi optio, culpa fugiat
+                blanditiis iusto adipisci suscipit sapiente asperiores labore
+                porro dolore!.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="testimonial-item mt-4 mt-lg-0" data-aos="fade-left">
+              <img
+                src="/assets/img/testimonials/testimonials-2.jpg"
+                class="testimonial-img"
+                alt=""
+              />
+              <h3>Sarah Jannah</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                non officiis aperiam quae laborum dolor necessitatibus modi
+                cumque voluptate? Quo dignissimos rerum consequatur dolorum, eum
+                vitae quia vero dolor omnis?
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="testimonial-item mt-4" data-aos="fade-right">
+              <img
+                src="/assets/img/testimonials/testimonials-3.jpg"
+                class="testimonial-img"
+                alt=""
+              />
+              <h3>Karina Candra</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi
+                officiis quo, iste adipisci tempore quisquam dolorum quam sit
+                necessitatibus fuga tenetur doloribus enim dolor amet impedit,
+                aliquam vero quae ex.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="testimonial-item mt-4" data-aos="fade-left">
+              <img
+                src="/assets/img/testimonials/testimonials-4.jpg"
+                class="testimonial-img"
+                alt=""
+              />
+              <h3>Rendi Panca</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ducimus velit eveniet vitae in, cupiditate accusantium
+                exercitationem quisquam ipsum. Accusantium asperiores unde sunt
+                eveniet, quidem in quo dolorum commodi tempora numquam!
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="testimonial-item mt-4" data-aos="fade-right">
+              <img
+                src="/assets/img/testimonials/testimonials-5.jpg"
+                class="testimonial-img"
+                alt=""
+              />
+              <h3>Bima Sauma</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla,
+                debitis sequi! Quia, modi quidem deleniti eligendi quisquam
+                deserunt ipsum temporibus eum animi fugit, beatae sequi esse?
+                Illo commodi cupiditate repudiandae.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="testimonial-item mt-4" data-aos="fade-left">
+              <img
+                src="/assets/img/testimonials/testimonials-6.jpg"
+                class="testimonial-img"
+                alt=""
+              />
+              <h3>Revenska</h3>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores repellat ex tempora amet molestiae earum ratione
+                accusamus dolorum. Sapiente odio nobis eveniet ab veniam saepe
+                aspernatur nostrum cupiditate porro perferendis!
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Testimonials Section -->
+
+    <!-- section footer start -->
+    <section class="ini-footer">
+      <div class="container">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        >
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+            >
+              <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap" />
+              </svg>
+            </a>
+            <p class="text-white">&copy; 2023</p>
+          </div>
+
+          <div class="col mb-3"></div>
+
+          <div class="col mb-3">
+            <h5 class="text-white">Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5 class="text-white">Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col mb-3">
+            <h5 class="text-white">Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">About</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <!-- section footer end -->
+
+    <!-- script aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

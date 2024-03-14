@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Jasa Joki</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9f3246d2c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+      .center-text {
+        background: url("your-bg-image.jpg") no-repeat center center fixed; /* Replace 'your-bg-image.jpg' with your actual background image URL */
+        background-size: cover;
+        color: #f9f9f9; /* Text color */
+        text-align: center; /* Center the text horizontally */
+        padding: 20px; /* Add padding around the text */
+        margin-bottom: 20px; /* Add space below the text */
+        font-size: 36px; /* Adjust font size as needed */
+        background-image: url(assets/img/home/code.jpg);
+      }
+
+      /* Carousel styling */
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        padding: 20px;
+      }
+
+      /* Card styling */
+      .card {
+        border: none;
+        transition: transform 0.2s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-body {
+        background-color: #f9f9f9;
+        text-align: justify;
+        height: 300px; /* Set a fixed height for the card body */
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-text {
+        color: #333;
+        flex-grow: 1;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card-img-top {
+        max-height: 200px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar section start -->
+    <div class="navbar-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-start text">
+            <i class="fa-solid fa-phone"></i> +628598899120
+          </div>
+          <div class="col-md-5 text-start text">
+            <i class="fa-brands fa-instagram"></i> My Instagram
+          </div>
+          <div class="col text-end text">
+            <i class="fa-brands fa-instagram"></i> Follow Us
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <section>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/portofolio/portofolio.html"
+                  >Portofolio</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/about/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link todo_list"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Todo List
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- navbar section end -->
+
+    <!-- todo list -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <input
+                type="text"
+                id="input-box"
+                placeholder="masukkan pesan"
+                class="form-control"
+              />
+              <button type="button" class="btn btn-info" onclick="addTask()">
+                Tambah
+              </button>
+            </div>
+            <ul id="list-container">
+              <!-- <li class="checked">Task 1</li>
+              <li >Task 2</li>
+              <li >Task 3</li> -->
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              save
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end todo list -->
+
+    <!-- Section home start -->
+    <section class="home" id="home">
+      <!-- Bagian home bisa ngoding disini yak -->
+      <div class="container">
+        <div class="position-relative overflow-hidden text-center">
+          <div class="center-text">
+            <h1><b>Jasa Joki</b></h1>
+          </div>
+        </div>
+
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/home/Carousel 1.jpg"
+                alt="Makalah"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption">
+                <h3>Website Bisnis</h3>
+                <p>
+                  Website untuk perusahaan dan usaha kecil, yang mencakup
+                  informasi perusahaan, produk, layanan, dan kontak.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/home/Carousel 2.jpg"
+                alt="Quiz"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption">
+                <h3>Website E-commerce</h3>
+                <p>
+                  Platform perdagangan online yang memungkinkan penjualan produk
+                  dan layanan, seperti toko online.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/home/Carousel 3.jpg"
+                alt="Catatan"
+                class="d-block w-100"
+              />
+              <div class="carousel-caption">
+                <h3>Blog</h3>
+                <p>
+                  Website yang berisi tulisan atau artikel yang diperbarui
+                  secara berkala.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a
+            class="carousel-control-prev"
+            href="#myCarousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#myCarousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="container my-5">
+      <div class="row">
+        <!-- Card untuk Situs Berita -->
+        <div class="col-md-4 mb-4 h-300">
+          <div class="card">
+            <img
+              src="assets/img/home/Cards 1.jpg"
+              class="card-img-top"
+              alt="Catatan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Situs Berita</h5>
+              <p class="card-text">
+                Situs Berita adalah jenis website yang dirancang khusus untuk
+                menyediakan berita terkini dalam berbagai bidang, seperti
+                politik, ekonomi, hiburan, olahraga, dan lain-lain. Situs ini
+                biasanya dikelola oleh tim jurnalis dan editor yang secara rutin
+                mempublikasikan berita terbaru dan artikel terkait.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card untuk Portal Berita -->
+        <div class="col-md-4 mb-4 h-300">
+          <div class="card">
+            <img
+              src="assets/img/home/Cards 2.jpg"
+              class="card-img-top"
+              alt="Catatan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Portal Berita</h5>
+              <p class="card-text">
+                Portal Berita adalah website yang berfungsi sebagai pintu masuk
+                untuk berita dan informasi dari berbagai sumber. Mereka
+                mengumpulkan berita dari berbagai sumber, termasuk situs berita
+                independen, dan menyajikannya dalam satu tempat. Pengguna dapat
+                menavigasi portal berita untuk menemukan berita terbaru dalam
+                berbagai kategori.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card untuk Situs Media Sosial -->
+        <div class="col-md-4 mb-4 h-300">
+          <div class="card">
+            <img
+              src="assets/img/home/Cards 3.jpg"
+              class="card-img-top"
+              alt="Catatan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Situs Media Sosial</h5>
+              <p class="card-text">
+                Situs Media Sosial adalah platform yang memungkinkan pengguna
+                untuk membuat profil pribadi, berinteraksi dengan pengguna lain,
+                dan berbagi berbagai jenis konten, termasuk teks, gambar, video,
+                dan tautan. Contoh situs media sosial termasuk Facebook,
+                Twitter, Instagram, dan LinkedIn. Mereka memungkinkan pengguna
+                untuk membangun jejaring sosial, mengikuti teman, dan terlibat
+                dalam percakapan online.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container my-5">
+      <div class="row">
+        <!-- Card untuk Forum -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img
+              src="assets/img/home/Cards 4.jpg"
+              class="card-img-top"
+              alt="Forum"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Forum</h5>
+              <p class="card-text">
+                Forum adalah tipe website yang digunakan untuk diskusi dan
+                pertukaran informasi antara pengguna. Mereka terbagi menjadi
+                berbagai kategori dan subforum, masing-masing berfokus pada
+                topik tertentu. Pengguna dapat membuat post, mengajukan
+                pertanyaan, dan memberikan tanggapan terhadap topik yang
+                dibahas. Contoh forum terkenal termasuk Reddit dan Stack
+                Overflow.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card untuk Situs Pendidikan -->
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img
+              src="assets/img/home/Cards 5.jpg"
+              class="card-img-top"
+              alt="Situs Pendidikan"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Situs Pendidikan</h5>
+              <p class="card-text">
+                adalah jenis website yang dirancang khusus untuk memberikan
+                informasi, materi pembelajaran, dan sumber daya pendidikan
+                kepada pengguna. Tujuan utamanya adalah untuk mendukung proses
+                pembelajaran, menyediakan wawasan, dan memfasilitasi
+                pengembangan pengetahuan dan keterampilan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section footer start -->
+    <section class="ini-footer">
+      <div class="container">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        >
+          <div class="col mb-3">
+            <a
+              href="/"
+              class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+            >
+              <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap" />
+              </svg>
+            </a>
+            <p class="text-white">&copy; 2023</p>
+          </div>
+          <div class="col mb-3"></div>
+          <div class="col mb-3">
+            <h5 class="text-white">Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h5 class="text-white">Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h5 class="text-white">Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">About</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </section>
+    <!-- section footer end -->
+
+    <!-- script aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
